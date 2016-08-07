@@ -1,7 +1,14 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 install:
-    - npm install -g resume-cli
-script: 
-    - resume export cv.html
+- npm install -g resume-cli
+script:
+- resume export cv.html
+deploy:
+  provider: releases
+  api_key:
+    secure: mHUNiQJoNLTB+/0f77sVMgCa44gWRkcLmY24qxhx2TOkjEK7x3HTF44eRVx6aENwoqXSiEOsm5+wAg/L0dKWuAaSkESpy+lFPEMKBjTdQbic2POCGs1I0U/ILzTxw4JEMnXmHjYrW81cqOzrYXlMAQAkp5xv0Xtj6uCjKdA8vz6pBFiwJeKtd+px7zGNtShAIfTeiV+3lL//T58+GZZDhWsSL8a6vmLUewPu6Dc6/hk1rcl8A3JjALV4W6N/GGsDdgkF+jo9aproE/+iBP6qf7AqFQwePBu5Z0yJbXQuVRdFopA0HvtfEjPYsSoPm1Lz0AZe4/sNGxNl7Wf/ljDw30eJRU0C+oXQYQfEQPchXsq8YuJeeZ/VoS1OBEaQDNcINrhDWpZwyPsgfsAGjO69D2PFyM7+zCUpfAc4h5l7M1NIZlcYbDzBtszvTKIAxsbiDPAzm9P0GurJRYKbzru5ozZYPlg9nuLX2eB+7yrlAw8ccG45C8IU/RhFNyac3OAXe5uQs6tkfCgKUFjT4Y0wX/P0yY82m4sOUZwIc2PIF60wFEOES/ZdXbrGORl0ulXhhoPAdHVR+1BvmpadXdXLqNpDWJt97I5XmemovlJAdQNk3PETB79neJ29YkjZXvF8eF7BkA1AtPi9fvPQ539JY7HYpp+nRalqv3AQqaQHZO4=
+  file: cv.html
+  on:
+    repo: vcanuel/vcanuel.github.io

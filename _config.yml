@@ -1,2 +1,4 @@
 name: Vincent Canuel
 markdown: kramdown
+gems:
+  - jekyll-sitemap

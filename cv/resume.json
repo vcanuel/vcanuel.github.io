@@ -1,0 +1,62 @@
+{
+  "basics": {
+    "name": "Vincent Canuel",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "vcanuel@akitek.be",
+    "phone": "0497191529",
+    "website": "http://akitek.be",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Brussel",
+      "countryCode": "Belgium",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Continuous Inegration",
+      "level": "",
+      "keywords": [
+        "Jenkins"
+      ]
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "iOS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [],
+  "references": []
+}

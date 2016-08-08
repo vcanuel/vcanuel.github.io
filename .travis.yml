@@ -21,4 +21,4 @@ after_success:
 - git config user.email "nobody@nobody.org"
 - git commit -m "commit from travis build number $TRAVIS_JOB_NUMBER"
 - git config --global push.default simple
-- git push github  --force
+- git push github HEAD:master  --force

@@ -15,7 +15,9 @@ after_success:
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/id_rsa_travis
 - ssh-add .travis/id_rsa_travis
-- git remote add deploy vcanuel/vcanuel.github.io
+- git remote add github https://github.com/vcanuel/vcanuel.github.io.git
 - git add cv/*
-- git commit -c "user.name=travis" -c "user.email=travis" -m "commit from travis build number $TRAVIS_JOB_NUMBER"
-- git push deploy master
+- git config user.name "Travis CI"
+- git config user.email "nobody@nobody.org"
+- git commit -m "commit from travis build number $TRAVIS_JOB_NUMBER"
+- git push github master

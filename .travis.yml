@@ -15,7 +15,7 @@ after_success:
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/id_rsa_travis
 - ssh-add .travis/id_rsa_travis
-- git remote add github https://github.com/vcanuel/vcanuel.github.io.git
+- git remote add git@github.com:vcanuel/vcanuel.github.io.git
 - git add cv/*
 - git config user.name "Travis CI"
 - git config user.email "nobody@nobody.org"

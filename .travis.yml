@@ -17,5 +17,5 @@ after_success:
 - ssh-add .travis/id_rsa_travis
 - git remote add deploy vcanuel/vcanuel.github.io
 - git add cv/*
-- git commit -m "commit from travis build number $TRAVIS_JOB_NUMBER"
+- git commit -c "user.name=travis" -c "user.email=travis" -m "commit from travis build number $TRAVIS_JOB_NUMBER"
 - git push deploy master
